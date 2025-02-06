@@ -17,7 +17,7 @@ async def start_message(c,m):
         await db.add_user(m.from_user.id, m.from_user.first_name)
         await c.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
     await m.reply_photo(f"https://graph.org/file/d7185a77eb3756327117e-2f27af3caf986341f4.jpg",
-        caption=f"<b>ʜᴇʟʟᴏ {m.from_user.mention} 👋\n\nɪ ᴀᴍ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ ᴀᴄᴄᴇᴘᴛᴏʀ ʙᴏᴛ. ɪ ᴄᴀɴ ᴀᴄᴄᴇᴘᴛ ᴀʟʟ ᴏʟᴅ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.ꜰᴏʀ ᴀʟʟ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ ᴜꜱᴇ - /accept</b>",
+        caption=f"<b>ʜᴇʟʟᴏ {m.from_user.mention} 👋\n\nɪ ᴀᴍ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ ᴀᴄᴄᴇᴘᴛᴏʀ ʙᴏᴛ. ɪ ᴄᴀɴ ᴀᴄᴄᴇᴘᴛ ᴀʟʟ ᴏʟᴅ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.\n\nꜰᴏʀ ᴀʟʟ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ ᴜꜱᴇ - /accept</b>",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton("⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆", url=f"https://telegram.me/QuickAcceptBot?startgroup=true&admin=invite_users"),
