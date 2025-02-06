@@ -13,4 +13,4 @@ DB_URI = environ.get("DB_URI", "mongodb+srv://Renamest:Renamest@cluster0.prfhc.m
 DB_NAME = environ.get("DB_NAME", "Ajay")
 
 # If this is True Then Bot Accept New Join Request 
-NEW_REQ_MODE = bool(environ.get('NEW_REQ_MODE', true ))
+NEW_REQ_MODE = bool(environ.get('NEW_REQ_MODE', True))
