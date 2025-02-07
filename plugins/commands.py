@@ -8,9 +8,7 @@ LOG_TEXT = """<b>#NewUser
     
 ID - <code>{}</code>
 
-Nᴀᴍᴇ - {}
-
-User Name - {username}</b>
+Nᴀᴍᴇ - {}</b>
 """
 
 @Client.on_message(filters.command('start'))
